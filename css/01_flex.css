@@ -1,0 +1,77 @@
+body {
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.or {
+    background-color: gold;
+}
+
+.argent {
+    background-color: silver;
+}
+
+.vert {
+    background-color: green;
+}
+
+.rose {
+    background-color: hotpink;
+}
+
+.flex {
+    /* 1- le parent est display-flex */
+    background-color: royalblue;
+    margin: auto;
+    display: flex;
+
+    /* 3- si le parent est trop petit les div s'adaptent à la largeur du parent ils vont rentrer quoi qu'il arrive */
+    width: 600px;
+    height: 800px;
+
+    /* -4 si on a flex-wrap: wrap; la largeur des enfants est respectée le 4e element va a ligne */
+    /* flex-wrap: wrap; */
+
+    /* -5 si on utilise flex-wrap: wrap-reverse; le dernier élément qui ne rentre pasdans le parent passe en premier */
+    /* flex-wrap: wrap-reverse; */
+
+    /* 6- comportement normal on force l'alignement et le redimensionnement des éléments */
+    /* flex-wrap: nowrap; */
+
+    /* 7- la justification des éléments avec justify-content ; flex-start par défaut, flex-end à la fin, center ou centre, space between, puis space-arround et space-evenly */
+    justify-content: space-evenly;
+
+    /* 8- autre propriété la hauteur align-items et l'alignement vertical ; stretch valeur par défaut, center au centre flex start au début flex end a la fin et  */
+    align-items: center;
+
+}
+
+.flex div {
+    /* 2- toutes les div enfants dans la div parente qui est flex */
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.t-cap {
+    text-transform: uppercase;
+}
