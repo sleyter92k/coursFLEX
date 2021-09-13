@@ -1,44 +1,41 @@
-/* une grille avec flex */
+/* une grille avec flex et en responsive MOS */
 * {
     box-sizing: border-box;
 }
+
 body {
-    background-color: yellow;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
-    color: #101010;
+    background-color: lightyellow;
 }
+
+/* couleur pour identifier */
+
 .bleu-leger {
     background-color: lightskyblue;
 }
+
 .vert-leger {
     background: lime;
 }
+
 .gris-leger {
     background:lightgrey;
+} 
+
+main {
+    width: 80%;
+    background-color: magenta;
+    margin: 0 auto;
 }
-.conteneur {
-    width: 100%;
-    background-color: #fff;
-}
-/* la class pour créer une rangée */
+
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 5px;
-    border: 1px solid orange;
+    border: 1px solid rgb(99, 184, 148);
     margin-bottom: 5px;
 }
-/* la class pour mettre les éléments les uns en dessous des autres  */
-.column {
-    display: flex;
-    flex-direction: column;
-}
-.centre {
-    justify-content: center;
-}
-/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+
 .col-1 {
     /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
     width: 8.333333%;
@@ -132,23 +129,79 @@ body {
 .marge-11 {
     margin-left: 91.666666%;
 }
-h1 {
-    background: url(../img/dolomites-italie.jpg) no-repeat;
-    background-position: center;
-    object-position: 50% 50%;
-    height: 250px;
-    line-height: 250px;
-    text-align: center;
-    width: 80%;
+
+/* classe pour les images */
+.img-fluide {
+    width: 100%;
 }
-.transparent {
+
+/* Les regles de médias queries pour le responsive et les différents écrans */
+
+/* pour les téléphones ou les smartphones */
+
+@media (max-width: 320px) {
+
+    .column-xs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .marge-xs {
+        margin: 0;
+    }
+
+    body {
     background-color: #fff;
-    opacity: 0.8;
+    }
+
+    main {
+
+    }
+}
+/* fin pour les téléphones */
+
+/* pour les petites tablettes et les smartphone grand écran */
+
+@media (min-width: 321px) and (max-width: 767px) {
+
+    body {
+        background-color: pink;
+    }
+
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: hotpink;
+    }
 }
 
-footer {
-    height: 200px;
-    background-color: lightgray;
+/* pour les tablettes et certains ordinateurs portable */
+
+@media (min-width: 768px) and (max-width: 1096px) {
+
+    body {
+        background-color: rgb(113, 29, 209);
+    }
+
+    main {
+        background-color: #fff;
+    }
 }
 
+/* pour les ordinateurs de bureau, les écrans pus que 1097px */
 
+@media (min-width: 1097px) {
+
+    body {
+        background-color: rgb(18, 214, 84);
+    }
+}

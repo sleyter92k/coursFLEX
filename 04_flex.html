@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours Flex - Flex 04</title>
+    <title>04-Flex</title>
     <link rel="stylesheet" href="css/04_flex.css">
 </head>
 <body>
     <main class="conteneur">
-        <header>
-            <div class="row">
-                <h1>Une page avec une grille</h1>
-                <p>Je suis fière de cette grille</p>
-            </div>    
+        <header class="row">
+         <div class="col-2 vert-leger">
+             <h5 class="gris-leger">13/09/2021</h5>
+             <p class="bleu-leger"> tout sur la grille de mise en page ! </p>
+         </div>
+         <div class="col-8">
+             <div class="row">
+                <h1 class=" col-10 marge-1"><span class="transparent">une grille de mise en page</span></h1>
+             </div>
+            
+         </div>
+         <div class="col-2 vert-leger">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aliquam atque magnam ab et corrupti incidunt autem voluptas fuga cumque aspernatur voluptates labore possimus, blanditiis consequuntur aut excepturi. Culpa, fuga.</p>
+         </div>
         </header>
-
+         <!-- fin header  -->
         <section class="">
             <div class="row">
-                <div class="bleu-leger">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt soluta voluptates, eligendi earum temporibus, hic quod in atque accusamus ut quam est nam! Officia iusto repellendus quidem veritatis vero.</p>
+                <div class="bleu-leger col-6">
+                    <p>RANGEE 1 :Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda dicta consequatur, numquam delectus at harum iure placeat fugiat suscipit libero minus esse expedita, asperiores debitis quas nulla ullam temporibus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo iste aperiam. Quas vero cumque maxime fuga veritatis, quis harum voluptates fugit quisquam cum, odit ipsam a pariatur accusamus quod?</p>
                 </div>
+
                 <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae molestiae sunt accusamus nisi ipsam assumenda possimus totam consequuntur nam! Architecto repellat sed quaerat ipsam laborum voluptates ab obcaecati, accusamus illo!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis fugit ea, ipsam, mollitia aut quis debitis dolorem quam deserunt consectetur voluptates. Sunt delectus dolorum quibusdam. Nostrum corrupti nesciunt suscipit.</p>
                 </div>
             </div>
-
+                <!-- fin rangée 1  -->
             <div class="row">
                 <div class="col-3">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum cupiditate quis impedit ex minus saepe harum, a atque consectetur mollitia sequi, hic, neque voluptatibus nam magni praesentium similique? Ipsum, vel.</p>
+                    <p> RANGEE 2 :Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptate temporibus, numquam nulla ad quae ea dolorum quasi. Placeat labore ratione doloremque fugiat quidem eum voluptate laborum veritatis tempore ex.</p>
                 </div>
                 <div class="col-3 vert-leger">
                     <p>lorem</p>
                 </div>
-                <div class="col-3"> 
-                    <p>lorem</p>         
-                </div>
-                <div class="col-3"> 
+                <div class="col-3">
                     <p>lorem</p>
-                </div>        
+                </div>
+                <div class="col-3">
+                    <p>lorem</p>
+                </div>
             </div>
+            <!-- fin rangée 2 -->
+            
             <div class="row">
                 <div class="col-3 bleu-leger">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem nam asperiores tenetur harum magni laudantium cupiditate perspiciatis eos beatae, corporis illo, necessitatibus minima molestiae cumque nisi aperiam, a voluptate?</p>
+                    <p> RANGEE 3 :Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis corrupti iusto accusantium, esse culpa beatae iste ut repellat excepturi eaque qui, voluptate libero laudantium sunt consequuntur cupiditate, perspiciatis molestiae dolorem!</p>
                 </div>
                 <div class="col-9">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quas amet alias ratione atque, voluptates ducimus qui voluptatibus illum aliquid corporis! Quod voluptatibus enim ipsum fuga adipisci ullam ea modi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quidem nulla. Dolorem facere at repellendus, aliquid molestiae qui illo incidunt architecto fugiat possimus vel itaque. Eos quibusdam harum esse reiciendis.</p>
                 </div>
-            </div>   
-
+            </div>
+            <!-- fin rangée 3  -->
             <div class="row">
-                <div class="col-2">1</div>
-                <div class="col-2">2</div>
+                <div class="col-4 vert-leger">RANGEE 4 : 1</div>
+                <div class="col-2 bleu-leger ">2</div>
+                <div class="col-1 vert-leger">3</div>
+                <div class="col-2 bleu-leger">4</div>
+                <div class="col-1 vert-leger">5</div>
+                <div class="col-1 bleu-leger">6</div>
+                <div class="col-1 vert-leger">7</div>
+            </div>
+            <!-- fin rangée 4  -->
+        
+            <div class="row">
+                <div class="col-1"> RANGEE 5 :1</div>
+                <div class="col-1">2</div>
                 <div class="col-1">3</div>
                 <div class="col-1">4</div>
                 <div class="col-1">5</div>
@@ -59,8 +83,43 @@
                 <div class="col-1">7</div>
                 <div class="col-1">8</div>
                 <div class="col-1">9</div>
+                <div class="col-1">10</div>
+                <div class="col-1">11</div>
+                <div class="col-1">12</div>
             </div>
+             <!-- fin rangée 5  -->
+        
+            <div class="row">
+                <div class="col-5 bleu-leger">
+                    <h4 class="">RANGEE 6 :titre 4</h4>
+                </div>
+                <div class="col-5 vert-leger">
+                    <h4 class="">titre 4</h4>
+                </div>
+                <div class="col-1">
+                    <h4 class="">titre 4</h4>
+                </div>
+                <div class="col-1 gris-leger">
+                    <h4 class="">titre 4</h4>
+                </div>
+                <div class="col-4 vert-leger">
+                    <h4 class="">titre 4</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" vert-leger col-6 marge-4"> 
+                <h4 class=" "> coucou</h4>
+            </div>
+
+            </div>
+      
+      
         </section>
+        <footer class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </footer>
     </main>
 </body>
 </html>
